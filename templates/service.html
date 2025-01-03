@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+
+{% block title %} Home Page {% endblock %}
+
+{% block header_extension %}
+{% endblock %}
+
+{% block body %}
+    <!-- begin:main-title -->
+    <div class="main-title block-section padd-40-top padd-60-btm bg-grey">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h1 class="main-title-primary">Services</h1>
+              <h4 class="main-title-secondary">What We Can Do</h4>
+            </div><!-- .col-## -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </div><!-- .main-title -->
+      <!-- end:main-title -->
+  
+      <!-- begin:breadcrumb -->
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Services</li>
+              </ol>
+            </div><!-- .col-md-12 -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </div><!-- .site-breadcrumb -->
+      <!-- end:breadcrumb -->
+  
+      <!-- begin:site-main -->
+      <div class="site-main">
+        <!-- begin:content-section -->
+        <div class="content-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="sidebar site-sidebar">
+                  <div class="widget widget_nav_menu">
+                    <ul>
+                      <li role="presentation" class="current-menu-item"><a href="{{url_for('service')}}">All Services</a></li>
+                      <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Construction Consultant</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item"><a href="{{url_for('service_item')}}">Residence Renovation</a></li>
+                          <li class="menu-item"><a href="{{url_for('service_item')}}">Office Interior Design</a></li>
+                          <li class="menu-item"><a href="{{url_for('service_item')}}">Hotels Construction</a></li>
+                          <li class="menu-item"><a href="{{url_for('service_item')}}">Plumbing</a></li>
+                          <li class="menu-item"><a href="{{url_for('service_item')}}">Construction of Tower</a></li>
+                        </ul>
+                      </li>
+                      <li role="presentation"><a href="{{url_for('service_item')}}">Metal Roofting</a></li>
+                      <li role="presentation"><a href="{{url_for('service_item')}}">General Contracting</a></li>
+                      <li role="presentation"><a href="{{url_for('service_item')}}">House Renovation</a></li>
+                      <li role="presentation"><a href="{{url_for('service_item')}}">Construction Management</a></li>
+                      <li role="presentation"><a href="{{url_for('service_item')}}">Design and Build</a></li>
+                    </ul><!-- .nav-stacked -->
+                  </div><!-- .widget -->
+  
+                  <div class="widget widget_brocure">
+                    <h3 class="widget-title">Brocure</h3>
+                    <ul class="nav nav-pills nav-stacked">
+                      <li role="presentation" class="active"><a href="#"><i class="fa fa-file-pdf-o"></i> <span>Download .PDF</span></a></li>
+                      <li role="presentation"><a href="#"><i class="fa fa-file-word-o"></i> <span>Download .DOC</span></a></li>
+                    </ul><!-- .nav-stacked -->
+                  </div><!-- .widget -->
+                </div><!-- .sidebar -->
+              </div><!-- .col-## -->
+              <div class="col-md-9">
+                <div class="entry-content">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="blog-entry">
+                        <a href="#" class="blog-entry-thumbnail">
+                          <img src="static/img/img-services-01.jpg" alt="Construction Consultant" class="img-responsive">
+                        </a>
+                        <div class="blog-entry-header">
+                          <h2 class="entry-title"><a href="#" rel="bookmark">Construction Consultant</a></h2>
+                        </div><!-- .blog-entry-header -->
+                        <div class="blog-entry-content">
+                          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings
+                            of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence
+                            ...</p>
+                          <p><a href="#" class="read-more">Read more +</a></p>
+                        </div><!-- .blog-entry-content -->
+                      </div><!-- .blog-entry -->
+                    </div><!-- .col-## -->
+                    <div class="col-sm-4">
+                      <div class="blog-entry">
+                        <a href="#" class="blog-entry-thumbnail">
+                          <img src="static/img/img-service-01.jpg" alt="metal roofting" class="img-responsive">
+                        </a>
+                        <div class="blog-entry-header">
+                          <h2 class="entry-title"><a href="#" rel="bookmark">Metal Roofting</a></h2>
+                        </div><!-- .blog-entry-header -->
+                        <div class="blog-entry-content">
+                          <p>Construction offer you the best in metal roofing services, supplies and materials to
+                            help protect one of your biggest investments you will ever make, your home. There is
+                            no better way ...</p>
+                          <p><a href="#" class="read-more">Read more +</a></p>
+                        </div><!-- .blog-entry-content -->
+                      </div><!-- .blog-entry -->
+                    </div><!-- .col-## -->
+                    <div class="col-sm-4">
+                      <div class="blog-entry">
+                        <a href="#" class="blog-entry-thumbnail">
+                          <img src="static/img/img-services-02.jpg" alt="General Contracting" class="img-responsive">
+                        </a>
+                        <div class="blog-entry-header">
+                          <h2 class="entry-title"><a href="#" rel="bookmark">General Contracting</a></h2>
+                        </div><!-- .blog-entry-header -->
+                        <div class="blog-entry-content">
+                          <p>Balancing a composition involves arranging both positive elements and negative
+                             space in such a way that no one area of the design overpowers other areas.
+                             Everything works ...</p>
+                          <p><a href="#" class="read-more">Read more +</a></p>
+                        </div><!-- .blog-entry-content -->
+                      </div><!-- .blog-entry -->
+                    </div><!-- .col-## -->
+                  </div><!-- .row -->
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="blog-entry">
+                        <a href="#" class="blog-entry-thumbnail">
+                          <img src="static/img/img-services-03.jpg" alt="Construction Management" class="img-responsive">
+                        </a>
+                        <div class="blog-entry-header">
+                          <h2 class="entry-title"><a href="#" rel="bookmark">Construction Management</a></h2>
+                        </div><!-- .blog-entry-header -->
+                        <div class="blog-entry-content">
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right at the ...</p>
+                          <p><a href="#" class="read-more">Read more +</a></p>
+                        </div><!-- .blog-entry-content -->
+                      </div><!-- .blog-entry -->
+                    </div><!-- .col-## -->
+                    <div class="col-sm-4">
+                      <div class="blog-entry">
+                        <a href="#" class="blog-entry-thumbnail">
+                          <img src="static/img/img-services-04.jpg" alt="House Renovation" class="img-responsive">
+                        </a>
+                        <div class="blog-entry-header">
+                          <h2 class="entry-title"><a href="#" rel="bookmark">House Renovation</a></h2>
+                        </div><!-- .blog-entry-header -->
+                        <div class="blog-entry-content">
+                          <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
+                            transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head ...</p>
+                          <p><a href="#" class="read-more">Read more +</a></p>
+                        </div><!-- .blog-entry-content -->
+                      </div><!-- .blog-entry -->
+                    </div><!-- .col-## -->
+                    <div class="col-sm-4">
+                      <div class="blog-entry">
+                        <a href="#" class="blog-entry-thumbnail">
+                          <img src="static/img/img-service-02.jpg" alt="Design and Build" class="img-responsive">
+                        </a>
+                        <div class="blog-entry-header">
+                          <h2 class="entry-title"><a href="#" rel="bookmark">Design and Build</a></h2>
+                        </div><!-- .blog-entry-header -->
+                        <div class="blog-entry-content">
+                          <p>But I must explain to you how all this mistaken idea of denouncing pleasure
+                            and praising pain was born and I will give you a complete account of the system,
+                            and expound the ...</p>
+                          <p><a href="#" class="read-more">Read more +</a></p>
+                        </div><!-- .blog-entry-content -->
+                      </div><!-- .blog-entry -->
+                    </div><!-- .col-## -->
+                  </div><!-- .row -->
+                </div><!-- .entry-content -->
+              </div><!-- .col-## -->
+            </div><!-- .row -->
+          </div><!-- .container -->
+        </div><!-- .content-section -->
+        <!-- end:content-section -->
+      </div><!-- .site-main -->
+      <!-- end:site-main -->
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

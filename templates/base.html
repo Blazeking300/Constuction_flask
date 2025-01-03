@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="construction is awesome bootstrap responsive construction business theme">
+    <meta name="keywords" content="construction, business, construction business, responsive, parallax, business theme">
+    <title>Construction</title>
+
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:300,500" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/Pe-icon-7-stroke.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.theme.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.min.css') }}">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/html5shiv.min.js"></script>
+    <script src="assets/plugins/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- begin:header -->
+    <div class="header header-page">
+        <!-- begin:topbar -->
+        <div id="topbar" class="topbar topbar-page">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="nav-utility">
+                  <span class="nav-item">A stylish Bootstrap theme for construction companies</span>
+                </div><!-- .nav-utility -->
+              </div><!-- .col-sm-8 -->
+              <div class="col-sm-4 hidden-xs">
+                <div class="nav-utility nav-right">
+                  <a href="#" class="nav-item"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="nav-item"><i class="fa fa-facebook"></i></a>
+                  <a href="#" class="nav-item"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="nav-item"><i class="fa fa-pinterest"></i></a>
+                  <a href="#" class="nav-item"><i class="fa fa-envelope-o"></i></a>
+                </div><!-- .nav-utility -->
+              </div><!-- .col-sm-4 -->
+            </div><!-- .row -->
+          </div><!-- .container -->
+        </div><!-- .topbar -->
+        <!-- end:topbar -->
+  
+        <!-- begin:site-navigation -->
+        <div class="site-header-affix-wrapper">
+          <header id="masthead" class="site-header header-dark" role="banner">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="site-branding">
+                    <h1 class="site-title title-image"><a href="{{ url_for('index') }}" rel="home"><img src="static/img/img-logo.png" alt="construction business" class="img-responsive"></a></h1>
+                  </div><!-- .site-branding -->
+                </div><!-- .col-sm-3 -->
+  
+                <div class="col-sm-9">
+                  <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false"><span class="pe-7s-menu"></span><span class="sr-only">Primary Menu</span></button>
+  
+                    <div class="menu-testing-menu-container">
+                      <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
+                        <li class="menu-item"><a href="{{ url_for('index') }}">Home</a></li>
+                        <li class="menu-item current-menu-item"><a href="{{url_for('about')}}">About</a></li>
+                        <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">Services</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item"><a href="{{url_for('service')}}">All Services</a></li>
+                            <li class="menu-item"><a href="{{url_for('service_item')}}">Construction Consultant</a></li>
+                            <li class="menu-item"><a href="{{url_for('service_item')}}">General Contracting</a></li>
+                            <li class="menu-item"><a href="{{url_for('service_item')}}">House Renovation</a></li>
+                            <li class="menu-item"><a href="{{url_for('service_item')}}">Construction Management</a></li>
+                            <li class="menu-item"><a href="{{url_for('service_item')}}">Design and Build</a></li>
+                          </ul>
+                        </li>
+                       
+                        <li class="menu-item"><a href="{{url_for('project')}}">Projects</a></li>
+                        <li class="menu-item"><a href="{{url_for('blog')}}">Blog</a></li>
+                        <li class="menu-item"><a href="{{url_for('contact')}}">Contact</a></li>
+                      </ul>
+                    </div>
+                  </nav><!-- #site-navigation -->
+                </div><!-- .col-sm-9 -->
+              </div><!-- .row -->
+            </div><!-- .container -->
+          </header><!-- #masthead -->
+        </div><!-- .site-header-affix-wrapper -->
+        <!-- end:site-navigation -->
+    </div><!-- #header -->
+    {% block header_extension %}
+    {% endblock %}
+    <!-- end:header -->
+  
+
+    
+    {% block body %}
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+
+    <!-- begin:footer -->
+    <footer id="colophon" class="site-footer bg-black" role="contentinfo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <section class="widget">
+                <img src="static/img/img-logo-footer.png" alt="bootstrap theme for construction companies" class="img-responsive marg-20-btm marg-20-top">
+                <p>Construction company based on Orange, California. Construction was very sufficient in maintaining the integrity of project in terms of planning, scheduling, cost and quality.</p>
+              </section><!-- .widget -->
+            </div><!-- .col-## -->
+  
+            <div class="col-md-2 col-sm-6 col-md-offset-1 col-sm-offset-0">
+              <section class="widget">
+                <h3 class="widget-title">Our Company</h3>
+                <ul>
+                  <li><a href="{{url_for('about')}}">About us</a></li>
+                  <li><a href="{{url_for('project')}}">Selected Work</a></li>
+                  <li><a href="{{url_for('contact')}}">Get in touch</a></li>
+                </ul>
+              </section><!-- .widget -->
+            </div><!-- .col-## -->
+  
+            <div class="col-md-3 col-sm-6">
+              <section class="widget">
+                <h3 class="widget-title">Our Services</h3>
+                <ul>
+                  <li><a href="{{url_for('service_item')}}">Metal Roofting</a></li>
+                  <li><a href="{{url_for('service_item')}}">Green Building</a></li>
+                  <li><a href="{{url_for('service_item')}}">Construction Consultant</a></li>
+                  <li><a href="{{url_for('service_item')}}">Construction Management</a></li>
+                  <li><a href="{{url_for('service_item')}}">General Contracting</a></li>
+                </ul>
+              </section><!-- .widget -->
+            </div><!-- .col-## -->
+  
+            <div class="col-md-3 col-sm-6">
+              <section class="widget">
+                <h3 class="widget-title">Our Contact</h3>
+                <p>5252 E Walnut Ave, Orange, California, United States.</p>
+                <p>hello@construction.me<br>+62 (0) 274 441 5005</p>
+              </section>
+            </div><!-- .col-## -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </footer><!-- #colophon -->
+      <!-- end:footer -->
+  
+      <!-- begin:copyright -->
+      <section id="copyright" class="copyright bg-black">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 copy-left">
+               <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a>. All Right Reserved.</p>
+            </div><!-- .col-sm-6 -->
+  
+            <div class="col-sm-6 copy-right">
+              <ul class="social-icon">
+                <li><a href="#" target="_blank" class="icon-twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank" class="icon-facebook"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#" target="_blank" class="icon-youtube"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#" target="_blank" class="icon-instagram"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div><!-- .col-sm-6 -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </section><!-- #copyright -->
+      <!-- begin:copyright -->
+</body>
+</html>
