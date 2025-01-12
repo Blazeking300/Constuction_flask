@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import os
-from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
 app = Flask(__name__)
