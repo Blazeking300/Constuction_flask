@@ -35,5 +35,23 @@ def contact():
 def post():
     return render_template('single-post.html')
 
+@app.route("/admin")
+def adminlogin():
+    return render_template('login.html')
+
+
+@app.route("/admin-login-post", methods=['GET','POST'])
+def admin_login_post():
+    if request.method == 'POST':
+        name = request.form['username']
+        password = request.form['password']
+
+        # return f"The password is {password == '12345678'}"
+
+        if name == 'admin' and password == '12345678':
+            return render_template('admin.html')
+    return redirect("/")
+
+    
 if __name__ == '__main__':
     app.run(debug=True)
